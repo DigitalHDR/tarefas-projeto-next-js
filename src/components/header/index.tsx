@@ -17,8 +17,8 @@ const Header = () => {
           </Link>
           {session?.user && (
             <Link href="/dashbord" className={styles.link}>
-              Meu Pinel
-            </Link>
+            Meu Pinel
+          </Link>
           )}
         </nav>
 
@@ -29,10 +29,7 @@ const Header = () => {
             Olá {session?.user?.name}
           </button>
         ) : (
-          <button
-            className={styles.loginButton}
-            onClick={() => signIn('google')}
-          >
+          <button className={styles.loginButton} onClick={() => signIn('google')}>
             Acessar
           </button>
         )}
